@@ -1,6 +1,8 @@
 <h2>Latest Patterns</h2>
 <ul>
-  {{#each}}
-    <li>{{name}}</li>
+  {{#each pattern in content}}
+    <li>{{#link-to 'pattern' pattern}}{{pattern.name}}{{/link-to}}</li>
   {{/each}}
 </ul>
+
+{{outlet}}

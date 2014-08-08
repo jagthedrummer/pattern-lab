@@ -6,7 +6,9 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('about');
-  this.resource('patterns');
+  this.resource('patterns',function(){
+    this.resource('pattern', { path: '/:pattern_id' });
+  });
 });
 
 export default Router;
