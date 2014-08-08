@@ -7,9 +7,9 @@ export default Ember.ObjectController.extend({
     },
     randomize : function(){
       this.get('model').setProperties({
-        p1 : Math.floor((Math.random() * 100) + 1),
-        p2 : Math.floor((Math.random() * 100) + 1),
-        p3 : Math.floor((Math.random() * 100) + 1)
+        p1 : Math.floor((Math.random() * 1000) + 1),
+        p2 : Math.floor((Math.random() * 1000) + 1),
+        p3 : Math.floor((Math.random() * 1000) + 1)
       });
     }
   }
