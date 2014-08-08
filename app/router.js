@@ -8,6 +8,7 @@ Router.map(function() {
   this.route('about');
   this.resource('patterns',function(){
     this.resource('pattern', { path: '/:pattern_id' });
+    this.route('new');
   });
 });
 

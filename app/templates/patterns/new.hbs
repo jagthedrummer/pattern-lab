@@ -1,0 +1,9 @@
+<h2>Create a new Pattern</h2>
+{{input value=p1 type='number'}}
+{{input value=p2 type='number'}}
+{{input value=p3 type='number'}}
+<br/>
+<button {{action randomize}}>Randomize</button>
+<button {{action savePattern}}>Save</button>
+
+{{pattern-display pattern=model}}

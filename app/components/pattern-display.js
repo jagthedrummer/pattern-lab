@@ -13,7 +13,7 @@ export default Ember.Component.extend({
     Ember.run.next(this,function(){
       this.drawPattern();
     });
-  }.observes('pattern'),
+  }.observes('pattern','pattern.p1','pattern.p2','pattern.p3'),
 
   drawPattern : function(){
     var ch = new Chromanin(256,this.get('canvasId'));

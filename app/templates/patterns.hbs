@@ -3,6 +3,7 @@
   {{#each pattern in content}}
     <li>{{#link-to 'pattern' pattern}}{{pattern.name}}{{/link-to}}</li>
   {{/each}}
+  <li>{{#link-to 'patterns.new'}}Add a new pattern{{/link-to}}</li>
 </ul>
 
 {{outlet}}
