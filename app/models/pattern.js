@@ -11,8 +11,9 @@ var Pattern = DS.Model.extend({
 
 Pattern.reopenClass({
   FIXTURES: [
-    { id: 1, p1 : 1, p2 : 2, p3 : 3 },
-    { id: 2, p1 : 42, p2 : 42, p3 : 42 }
+    { id: 1, p1 : 1, p2 : 2, p3 : 5},
+    { id: 2, p1 : 42, p2 : 420, p3 : 4200},
+    { id: 3, p1 : 100, p2 : 200, p3 : 300}
   ]
 });
 
