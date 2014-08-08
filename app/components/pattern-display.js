@@ -18,7 +18,6 @@ export default Ember.Component.extend({
   drawPattern : function(){
     var ch = new Chromanin(256,this.get('canvasId'));
     ch.initlayers(256,256);
-    ch.initlayers(256,256);
     ch.checkerBoardLayer(0,16,16,this.get('pattern.p1'),this.get('pattern.p2'),this.get('pattern.p3'),0,0,128);
     ch.sineDistort(0,0,0.100000001490116,this.get('pattern.p1'),this.get('pattern.p2'),this.get('pattern.p3'));
     ch.addLayers(0,1,4,1,1);
