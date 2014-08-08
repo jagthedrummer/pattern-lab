@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PatternLab</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/pattern-lab.css">
+  </head>
+  <body>
+    <script>
+      window.PatternLabENV = {{ENV}};
+      window.EmberENV = window.PatternLabENV.EmberENV;
+    </script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/pattern-lab.js"></script>
+    <script>
+      window.PatternLab = require('pattern-lab/app')['default'].create(PatternLabENV.APP);
+    </script>
+  </body>
+</html>
