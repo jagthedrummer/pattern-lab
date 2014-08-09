@@ -1,8 +1,62 @@
 html, body {
   margin: 20px;
+  font-family:sans-serif;
+  color:#333333;
 }
 
 #pattern-list{
   float:left;
+  margin:0px;
   margin-right:20px;
+  padding:0px;
+  list-style:none;
+  width:120px;
+}
+
+#pattern-list li{
+  margin:2px 0px;
+  padding:0px;
+  line-height:0;
+}
+
+#pattern-list li canvas{
+  margin:0px;
+}
+
+#pattern-list li.new a{
+  line-height:1.2em;
+  display:block;
+  background:#efefef;
+  border:1px solid #ababab;
+  color:blue;
+  text-align:center;
+  padding:10px;
+}
+
+#pattern-list li.new a:hover{
+  background:#dedede;
+}
+
+.header{
+  background:#efefef;
+  padding:5px;
+  border-bottom:1px solid #ababba;
+}
+
+.header h1{
+  margin:0px;
+}
+
+.header h1 a{
+  text-decoration:none;
+  color:#333333;
+}
+
+.header a{
+  color:blue;
+  margin-right:20px;
+}
+
+input{
+  width:45px;
 }

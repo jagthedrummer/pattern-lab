@@ -1,9 +1,9 @@
 <h2>Latest Patterns</h2>
 <ul id="pattern-list">
+  <li class="new">{{#link-to 'patterns.new'}}New Pattern{{/link-to}}</li>
   {{#each pattern in content}}
-    <li>{{#link-to 'pattern' pattern}}{{pattern-display pattern=pattern width=125 height=25}} {{!pattern.name}}{{/link-to}}</li>
+    <li>{{#link-to 'pattern' pattern}}{{pattern-display pattern=pattern width=120 height=50}} {{!pattern.name}}{{/link-to}}</li>
   {{/each}}
-  <li>{{#link-to 'patterns.new'}}Add a new pattern{{/link-to}}</li>
 </ul>
 
 {{outlet}}
