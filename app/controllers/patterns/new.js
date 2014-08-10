@@ -3,7 +3,11 @@ import Ember from 'ember';
 export default Ember.ObjectController.extend({
   actions : {
     savePattern : function(){
-      this.transitionToRoute('pattern',this.get('model'));
+      var _this = this;
+      this.get('model').save().then(function(pattern){
+        _this.transitionToRoute('pattern',pattern);
+      });
+      
     },
     randomize : function(){
       this.get('model').setProperties({
